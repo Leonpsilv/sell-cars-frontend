@@ -1,0 +1,51 @@
+.allCarsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #EEEDF1;
+}
+
+.carContainer {
+    width: fit-content;
+    max-height: fit-content;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFF;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.carContainer:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.carContainer img{
+    width: 300px;
+}
+
+.carContainer h2, h3, p {
+    margin: 10px 0;
+    margin-left: 8px;
+    font-family: Poppins;
+}
+
+.carContainer h2 {
+    font-size: 5vh;
+    margin-bottom: 2px;
+    color: #000;
+}
+
+.carContainer h3 {
+    font-size: 3vh;
+    color: #262626;
+    margin-top: 0px;
+}
+
+.carContainer p {
+    color: #4A4A4A;
+}
+
+.carPrice {
+    font-size: 4vh;
+    color: #262626;
+}

@@ -1,10 +1,9 @@
-import React from 'react';
-import Cars from './components/Feed/Car';
+import Cars from './components/Feed/Cars';
+import './reset.css';
 
 function App() {
   return (
     <div className="App">
-     aqui teremos um app
      <Cars />
     </div>
   );
