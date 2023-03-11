@@ -1,18 +1,7 @@
-import { useEffect } from "react";
-import { GET_CARS } from "../../api"
-import useFetch from "../../hooks/useFetch";
-import Messages from "../Messages";
+import Messages from "../Messages/Messages";
 import styles from "./Cars.module.css";
 
-function Cars() {
-    const {data, loading, error, request} = useFetch();
-    useEffect(() => {
-        async function getCars() {
-            const {url, options} = GET_CARS()
-            const {response, json} = await request(url, options)
-        }  
-        getCars()
-    }, [request])
+function Cars({data, loading, error}: any) {
     if(loading) return (<h1>Loading</h1>)
     if(!data) return <Messages text="Não há carros registrados no servidor" />
   return (

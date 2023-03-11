@@ -1,0 +1,10 @@
+.messages {
+    max-width: fit-content;
+    margin: 20px auto;
+    font-family: Poppins, sans-serif;
+}
+
+.link {
+    margin: 0 auto;
+    background-color: red;
+}
